@@ -1,0 +1,173 @@
+{
+ "allow_rename": 1,
+ "autoname": "field:property_code",
+ "creation": "2021-03-23 19:57:26.322142",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "property_code",
+  "property_name",
+  "company",
+  "cost_center",
+  "image",
+  "status",
+  "section_break_7",
+  "bedroom",
+  "master_bedroom",
+  "common_bathroom",
+  "unit_details_section",
+  "builtup_area",
+  "carpet_area",
+  "facing",
+  "no_of_parking",
+  "column_break_16",
+  "rent",
+  "security_deposit",
+  "property_assets_section_section",
+  "property_assets",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_code",
+   "fieldtype": "Data",
+   "label": "Property Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "property_name",
+   "fieldtype": "Data",
+   "label": "Property Name"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "image"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nBooked\nCommon Area (Not for lease)\nManaged for Customer\nOff Lease in 3 Months\nOn Lease\nOn Sale\nRemoved\nRenewal\nSold\nVacating\nOn lease"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bedroom",
+   "fieldtype": "Data",
+   "label": "Bedroom"
+  },
+  {
+   "fieldname": "master_bedroom",
+   "fieldtype": "Data",
+   "label": "Master bedroom"
+  },
+  {
+   "fieldname": "common_bathroom",
+   "fieldtype": "Data",
+   "label": "Common Bathroom"
+  },
+  {
+   "fieldname": "unit_details_section",
+   "fieldtype": "Section Break",
+   "label": "Unit Details"
+  },
+  {
+   "fieldname": "builtup_area",
+   "fieldtype": "Data",
+   "label": "Builtup area"
+  },
+  {
+   "fieldname": "carpet_area",
+   "fieldtype": "Data",
+   "label": "Carpet area"
+  },
+  {
+   "fieldname": "facing",
+   "fieldtype": "Select",
+   "label": "Facing",
+   "options": "\nNorth\nNorth-East\nEast\nSouth-East\nWest\nNorth-West\nSouth-West\nSouth"
+  },
+  {
+   "fieldname": "no_of_parking",
+   "fieldtype": "Data",
+   "label": "No of parking"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rent",
+   "fieldtype": "Currency",
+   "label": "Rent"
+  },
+  {
+   "fieldname": "security_deposit",
+   "fieldtype": "Currency",
+   "label": "Security Deposit"
+  },
+  {
+   "fieldname": "property_assets_section_section",
+   "fieldtype": "Section Break",
+   "label": "Property Assets Section"
+  },
+  {
+   "fieldname": "property_assets",
+   "fieldtype": "Table",
+   "label": "Property Assets",
+   "options": "Property Assets"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Property",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "image_field": "image",
+ "is_submittable": 1,
+ "modified": "2021-03-23 19:57:36.105002",
+ "modified_by": "Administrator",
+ "module": "PAV Property Management Solution",
+ "name": "Property",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}
