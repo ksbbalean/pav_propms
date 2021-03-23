@@ -1,0 +1,53 @@
+{
+ "creation": "2021-03-23 20:00:26.306785",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "contract_num",
+  "data_3"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_num",
+   "fieldtype": "Link",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0627\u062a\u0641\u0627\u0642\u064a\u0629",
+   "options": "Rent Contract"
+  },
+  {
+   "fieldname": "data_3",
+   "fieldtype": "Data"
+  }
+ ],
+ "modified": "2021-03-23 21:31:10.216224",
+ "modified_by": "Administrator",
+ "module": "PAV Property Management Solution",
+ "name": "Receipt Note",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

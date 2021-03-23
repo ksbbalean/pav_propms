@@ -1,0 +1,139 @@
+{
+ "autoname": "format:pr-{YYYY}",
+ "creation": "2021-03-23 19:59:24.916564",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "property_name",
+  "column_break_2",
+  "date",
+  "section_break_4",
+  "problem_type",
+  "problem_attach",
+  "section_break_7",
+  "technician",
+  "examination",
+  "section_break_10",
+  "supervisor",
+  "supervisor_directing",
+  "section_break_13",
+  "services_director",
+  "director_agreement",
+  "section_break_16",
+  "executive_director"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u062c\u0645\u0639",
+   "options": "Property",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "problem_type",
+   "fieldtype": "Data",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0645\u0634\u0643\u0644\u0629"
+  },
+  {
+   "fieldname": "problem_attach",
+   "fieldtype": "Text Editor",
+   "label": "\u0627\u0644\u0645\u0631\u0641\u0642\u0627\u062a"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "technician",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0641\u0646\u064a \u0627\u0644\u0645\u062e\u062a\u0635",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "examination",
+   "fieldtype": "Text Editor",
+   "label": "\u0641\u062d\u0635 \u0641\u0646\u064a \u0644\u0644\u0645\u0634\u0643\u0644\u0629"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": " \u0645\u0634\u0631\u0641 \u0627\u0644\u0645\u062c\u0645\u0639",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "supervisor_directing",
+   "fieldtype": "Text Editor",
+   "label": "\u062a\u0648\u062c\u064a\u0647 \u0627\u0644\u0645\u0634\u0631\u0641"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "services_director",
+   "fieldtype": "Link",
+   "label": "\u0645\u062f\u064a\u0631 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0641\u0646\u064a\u0629 \u0648\u0627\u0644\u0635\u064a\u0627\u0646\u0629",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "director_agreement",
+   "fieldtype": "Text Editor",
+   "label": "\u0645\u0648\u0627\u0641\u0642\u0629 \u0645\u062f\u064a\u0631 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0648\u0627\u0644\u0635\u064a\u0627\u0646\u0629"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "executive_director",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u062f\u064a\u0631 \u0627\u0644\u062a\u0646\u0641\u064a\u0630\u064a",
+   "options": "Employee"
+  }
+ ],
+ "modified": "2021-03-23 21:32:27.468608",
+ "modified_by": "Administrator",
+ "module": "PAV Property Management Solution",
+ "name": "Technical Services Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

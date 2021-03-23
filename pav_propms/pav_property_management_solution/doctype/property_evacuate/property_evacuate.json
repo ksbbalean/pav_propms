@@ -1,0 +1,87 @@
+{
+ "autoname": "format:{YYYY}-{tenant_num}",
+ "creation": "2021-03-23 20:02:51.920962",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "tenant_num",
+  "column_break_4",
+  "contract_num",
+  "column_break_10",
+  "property_num",
+  "biulding_num",
+  "villa_num"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tenant_num",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0633\u062a\u0623\u062c\u0631",
+   "options": "Tenant Add",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_num",
+   "fieldtype": "Link",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0639\u0642\u062f",
+   "options": "Rent Contract"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "property_num",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0634\u0642\u0629",
+   "options": "Property"
+  },
+  {
+   "fieldname": "biulding_num",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0639\u0645\u0627\u0631\u0647"
+  },
+  {
+   "fieldname": "villa_num",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0641\u064a\u0644\u0627"
+  }
+ ],
+ "modified": "2021-03-23 21:30:57.904315",
+ "modified_by": "Administrator",
+ "module": "PAV Property Management Solution",
+ "name": "Property Evacuate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

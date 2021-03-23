@@ -1,0 +1,208 @@
+{
+ "autoname": "format:{first_party}-{#####}",
+ "creation": "2021-03-23 20:00:25.113273",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_3",
+  "city",
+  "section_break_5",
+  "first_party",
+  "first_party_representative",
+  "column_break_8",
+  "second_party",
+  "second_party_representative",
+  "section_break_11",
+  "property_num",
+  "area",
+  "purpose",
+  "property_type",
+  "property_address",
+  "column_break_21",
+  "floors_count",
+  "rooms_count",
+  "paths_count",
+  "kitchen",
+  "garden",
+  "garage",
+  "section_break_25",
+  "date_start",
+  "date_end",
+  "column_break_28",
+  "rent_amount",
+  "months_count"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u062f\u064a\u0646\u0629",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_party",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0637\u0631\u0641 \u0627\u0644\u0627\u0648\u0644",
+   "options": "Company"
+  },
+  {
+   "fieldname": "first_party_representative",
+   "fieldtype": "Link",
+   "label": "\u0645\u0645\u062b\u0644 \u0627\u0644\u0637\u0631\u0641 \u0627\u0644\u0627\u0648\u0644",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "second_party",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0637\u0631\u0641 \u0627\u0644\u062b\u0627\u0646\u064a",
+   "options": "Rent Request"
+  },
+  {
+   "depends_on": "second_party",
+   "fieldname": "second_party_representative",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0645\u0645\u062b\u0644 \u0627\u0644\u0637\u0631\u0641 \u0627\u0644\u062b\u0627\u0646\u064a"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "in_preview": 1
+  },
+  {
+   "fieldname": "property_num",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0639\u064a\u0646 \u0627\u0644\u0645\u0624\u062c\u0631\u0629",
+   "options": "Property"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Select",
+   "label": "\u0645\u062d\u0644 \u0627\u0644\u0639\u0642\u062f",
+   "options": "\u0639\u0642\u0627\u0631\n\u0645\u0628\u0646\u0649"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u063a\u0631\u0636 \u0645\u0646 \u0627\u0644\u0639\u064a\u0646\u0629 \u0627\u0644\u0645\u0624\u062c\u0631\u0629"
+  },
+  {
+   "fetch_from": "property_num.type",
+   "fieldname": "property_type",
+   "fieldtype": "Data",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0639\u064a\u0646 \u0627\u0644\u0645\u0624\u062c\u0631\u0629"
+  },
+  {
+   "fieldname": "property_address",
+   "fieldtype": "Data",
+   "label": "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0639\u064a\u0646 \u0627\u0644\u0645\u0624\u062c\u0631\u0629"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "floors_count",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0637\u0648\u0627\u0628\u0642"
+  },
+  {
+   "fieldname": "rooms_count",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u063a\u0631\u0641"
+  },
+  {
+   "fieldname": "paths_count",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u062d\u0645\u0627\u0645\u0627\u062a"
+  },
+  {
+   "default": "0",
+   "fieldname": "kitchen",
+   "fieldtype": "Check",
+   "label": "\u0645\u0637\u0628\u062e"
+  },
+  {
+   "default": "0",
+   "fieldname": "garden",
+   "fieldtype": "Check",
+   "label": "\u062d\u062f\u064a\u0642\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "garage",
+   "fieldtype": "Check",
+   "label": "\u062c\u0631\u0627\u062c \u0633\u064a\u0627\u0631\u0627\u062a"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_start",
+   "fieldtype": "Date",
+   "label": "\u062a\u0628\u062f\u0627\u0621 \u0645\u0646"
+  },
+  {
+   "fieldname": "date_end",
+   "fieldtype": "Date",
+   "label": "\u062a\u0646\u062a\u0647\u064a \u0641\u064a"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0627\u064a\u062c\u0627\u0631\u064a\u0629"
+  },
+  {
+   "fieldname": "months_count",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0627\u0634\u0647\u0631"
+  }
+ ],
+ "modified": "2021-03-23 21:31:22.436151",
+ "modified_by": "Administrator",
+ "module": "PAV Property Management Solution",
+ "name": "Rent Contract",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

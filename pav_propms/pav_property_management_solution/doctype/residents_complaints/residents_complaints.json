@@ -1,0 +1,107 @@
+{
+ "autoname": "format:{resident_name}-{#####}",
+ "creation": "2021-03-23 21:32:19.252056",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "property_num",
+  "column_break_3",
+  "time",
+  "resident_name",
+  "section_break_6",
+  "content",
+  "section_break_8",
+  "employee",
+  "column_break_10",
+  "supervisor"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property_num",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0634\u0642\u0629/\u0627\u0644\u0633\u0643\u0646",
+   "options": "Property",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "\u0648\u0642\u062a \u0627\u0644\u0634\u0643\u0648\u0649"
+  },
+  {
+   "fieldname": "resident_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0633\u0627\u0643\u0646",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "\u0645\u0648\u0636\u0648\u0639 \u0627\u0644\u0634\u0643\u0648\u0649",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "\u0645\u062a\u0644\u0642\u064a \u0627\u0644\u0634\u0643\u0648\u0649",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "\u0645\u0634\u0631\u0641 \u0627\u0644\u0645\u062c\u0645\u0639",
+   "options": "Employee"
+  }
+ ],
+ "modified": "2021-03-23 21:32:19.252056",
+ "modified_by": "Administrator",
+ "module": "PAV Property Management Solution",
+ "name": "Residents Complaints",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

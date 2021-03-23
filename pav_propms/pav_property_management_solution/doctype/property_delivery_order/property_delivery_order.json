@@ -1,0 +1,137 @@
+{
+ "creation": "2021-03-23 20:02:52.361314",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_2",
+  "employee",
+  "section_break_4",
+  "property_num",
+  "biulding_num",
+  "column_break_7",
+  "villa_num",
+  "property_type",
+  "section_break_10",
+  "tetant_name",
+  "column_break_12",
+  "contract_num",
+  "section_break_14",
+  "residents_character"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u0648\u0638\u0641",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "property_num",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0634\u0642\u0629",
+   "options": "Property",
+   "reqd": 1
+  },
+  {
+   "depends_on": "property_num",
+   "fieldname": "biulding_num",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0639\u0645\u0627\u0631\u0629"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "property_num",
+   "fieldname": "villa_num",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0641\u064a\u0644\u0627"
+  },
+  {
+   "depends_on": "property_num",
+   "fetch_from": "property_num.type",
+   "fieldname": "property_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0645\u0644\u0643\u064a\u0629"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tetant_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u0633\u062a\u0623\u062c\u0631",
+   "options": "Tenant Add",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_num",
+   "fieldtype": "Link",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0639\u0642\u062f",
+   "options": "Rent Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "residents_character",
+   "fieldtype": "Text Editor",
+   "label": "\u0627\u0644\u0633\u0627\u0643\u0646\u064a\u0646 \u0639\u0644\u0649 \u0627\u0644\u0646\u062d\u0648 \u0627\u0644\u062a\u0627\u0644\u064a"
+  }
+ ],
+ "modified": "2021-03-23 21:30:21.941436",
+ "modified_by": "Administrator",
+ "module": "PAV Property Management Solution",
+ "name": "Property Delivery Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
