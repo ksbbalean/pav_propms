@@ -7,7 +7,7 @@
  "field_order": [
   "date",
   "property_num",
-  "tenant_num",
+  "tenant",
   "column_break_4",
   "warning_type",
   "biulding_num",
@@ -34,12 +34,6 @@
    "label": "\u0631\u0642\u0645 \u0627\u0644\u0634\u0642\u0629",
    "options": "Property",
    "reqd": 1
-  },
-  {
-   "fieldname": "tenant_num",
-   "fieldtype": "Link",
-   "label": "\u0627\u0644\u0645\u0633\u062a\u0623\u062c\u0631",
-   "options": "Tenant Add"
   },
   {
    "fieldname": "column_break_4",
@@ -88,9 +82,15 @@
    "fieldname": "other_amount",
    "fieldtype": "Currency",
    "label": "\u0623\u062e\u0631\u0649"
+  },
+  {
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0633\u062a\u0623\u062c\u0631",
+   "options": "Employee"
   }
  ],
- "modified": "2021-03-23 21:31:07.035937",
+ "modified": "2021-03-27 12:46:37.202173",
  "modified_by": "Administrator",
  "module": "PAV Property Management Solution",
  "name": "Rent Warning",

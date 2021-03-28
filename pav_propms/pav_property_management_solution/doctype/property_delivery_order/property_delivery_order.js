@@ -5,4 +5,6 @@ frappe.ui.form.on('Property Delivery Order', {
 	// refresh: function(frm) {
 
 	// }
+
+
 });

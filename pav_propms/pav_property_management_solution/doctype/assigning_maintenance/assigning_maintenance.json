@@ -19,7 +19,7 @@
   "section_break_12",
   "materials",
   "section_break_14",
-  "tenant_name",
+  "tenant",
   "tenant_notes"
  ],
  "fields": [
@@ -100,18 +100,18 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "tenant_name",
-   "fieldtype": "Link",
-   "label": "\u0627\u0644\u0633\u0627\u0643\u0646",
-   "options": "Tenant Add"
-  },
-  {
    "fieldname": "tenant_notes",
    "fieldtype": "Data",
    "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0633\u0627\u0643\u0646"
+  },
+  {
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0633\u0627\u0643\u0646",
+   "options": "Employee"
   }
  ],
- "modified": "2021-03-23 21:31:13.639266",
+ "modified": "2021-03-27 12:47:25.720536",
  "modified_by": "Administrator",
  "module": "PAV Property Management Solution",
  "name": "Assigning Maintenance",

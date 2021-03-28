@@ -1,9 +1,8 @@
 // Copyright (c) 2021, Patrner Team and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Receipt Note', {
+frappe.ui.form.on('Property Type', {
 	// refresh: function(frm) {
-		
 
 	// }
 });

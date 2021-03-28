@@ -1,14 +1,14 @@
 {
  "autoname": "format:{tinant_name}-{#####}",
- "creation": "2021-03-23 20:00:25.536486",
+ "creation": "2021-03-28 09:26:49.247164",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "date",
-  "tinant_name",
+  "rent_request",
   "column_break_3",
-  "contract_num",
+  "rent_contract",
   "section_break_6",
   "contract_date",
   "contract_duration",
@@ -21,6 +21,7 @@
   "address",
   "phone",
   "residents_num",
+  "residents_relation",
   "column_break_18",
   "id_num",
   "issued_from",
@@ -33,7 +34,7 @@
    "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e"
   },
   {
-   "fieldname": "tinant_name",
+   "fieldname": "rent_request",
    "fieldtype": "Link",
    "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062a\u0623\u062c\u0631",
    "options": "Rent Request"
@@ -43,7 +44,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "contract_num",
+   "fieldname": "rent_contract",
    "fieldtype": "Link",
    "label": "\u0631\u0642\u0645 \u0639\u0642\u062f \u0627\u0644\u0627\u064a\u062c\u0627\u0631",
    "options": "Rent Contract"
@@ -92,46 +93,53 @@
    "fieldtype": "Section Break"
   },
   {
-   "fetch_from": "tinant_name.address",
+   "fetch_from": "rent_request.address",
    "fieldname": "address",
    "fieldtype": "Data",
    "label": "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0645\u0633\u062a\u0623\u062c\u0631"
   },
   {
-   "fetch_from": "tinant_name.phone",
+   "fetch_from": "rent_request.phone",
    "fieldname": "phone",
    "fieldtype": "Data",
    "label": "\u0627\u0644\u0647\u0627\u062a\u0641"
   },
   {
+   "fetch_from": "rent_request.residents_count",
    "fieldname": "residents_num",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0633\u0627\u0643\u0646\u064a\u0646 "
+  },
+  {
+   "fetch_from": "rent_request.residents_relation",
+   "fieldname": "residents_relation",
    "fieldtype": "Data",
-   "label": "\u0639\u062f\u062f \u0627\u0644\u0633\u0627\u0643\u0646\u064a\u0646 \u0648\u0639\u0644\u0627\u0642\u062a\u0645 \u0628\u0627\u0644\u0645\u0633\u062a\u0623\u062c\u0631"
+   "label": "\u0639\u0644\u0627\u0642\u062a\u0645 \u0628\u0627\u0644\u0645\u0633\u062a\u0623\u062c\u0631"
   },
   {
    "fieldname": "column_break_18",
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "tinant_name.id_num",
+   "fetch_from": "rent_request.id_num",
    "fieldname": "id_num",
    "fieldtype": "Int",
    "label": "\u0631\u0642\u0645 \u0627\u0644\u0647\u0648\u064a\u0629"
   },
   {
-   "fetch_from": "tinant_name.issued_from",
+   "fetch_from": "rent_request.issued_from",
    "fieldname": "issued_from",
    "fieldtype": "Data",
    "label": "\u0645\u0643\u0627\u0646 \u0627\u0644\u0635\u062f\u0648\u0631"
   },
   {
-   "fetch_from": "tinant_name.issued_from",
+   "fetch_from": "rent_request.issued_from",
    "fieldname": "issued_date",
    "fieldtype": "Date",
    "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0635\u062f\u0648\u0631"
   }
  ],
- "modified": "2021-03-23 21:31:16.796424",
+ "modified": "2021-03-28 09:26:49.247164",
  "modified_by": "Administrator",
  "module": "PAV Property Management Solution",
  "name": "Tenant Add",

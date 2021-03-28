@@ -26,7 +26,10 @@
   "security_deposit",
   "property_assets_section_section",
   "property_assets",
-  "amended_from"
+  "amended_from",
+  "address",
+  "property_type",
+  "kitchen"
  ],
  "fields": [
   {
@@ -102,7 +105,7 @@
    "fieldname": "facing",
    "fieldtype": "Select",
    "label": "Facing",
-   "options": "\nNorth\nNorth-East\nEast\nSouth-East\nWest\nNorth-West\nSouth-West\nSouth"
+   "options": "North\nNorth-East\nEast\nSouth-East\nWest\nNorth-West\nSouth-West\nSouth"
   },
   {
    "fieldname": "no_of_parking",
@@ -142,11 +145,26 @@
    "options": "Property",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Link",
+   "label": "Property Type",
+   "options": "Property Type"
+  },
+  {
+   "fieldname": "kitchen",
+   "fieldtype": "Data",
+   "label": "Kitchen"
   }
  ],
  "image_field": "image",
- "is_submittable": 1,
- "modified": "2021-03-23 19:57:36.105002",
+ "modified": "2021-03-26 19:51:47.835601",
  "modified_by": "Administrator",
  "module": "PAV Property Management Solution",
  "name": "Property",
