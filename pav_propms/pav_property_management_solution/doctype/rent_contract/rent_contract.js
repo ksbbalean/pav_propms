@@ -3,10 +3,21 @@
 
 frappe.ui.form.on('Rent Contract', {
 	onload:function(frm) {
-		frappe.ui.form.on(frm.doctype, "second_party", function(){
-			console.log("frm.doc.docstatus");
+		console.log("Load");
 
-		});
+		var v = cur_frm.doc.rent_request;
+		cur_frm.set_value("rent_request", "");
+		cur_frm.set_value("rent_request", v);
+		console.log("last3");
+
+		// frappe.ui.form.on(frm.doctype, "date", function(){
+		// 	var v = cur_frm.doc.rent_request;
+		// 	cur_frm.set_value("rent_request", "");
+		// 	cur_frm.set_value("rent_request", v);
+		// 	console.log("last");
+
+
+		// });
 	},
 
 	refresh: function(frm) {

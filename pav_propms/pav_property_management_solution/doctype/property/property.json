@@ -11,6 +11,7 @@
   "company",
   "cost_center",
   "image",
+  "projects",
   "status",
   "section_break_7",
   "bedroom",
@@ -29,37 +30,50 @@
   "amended_from",
   "address",
   "property_type",
-  "kitchen"
+  "kitchen",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_property"
  ],
  "fields": [
   {
    "fieldname": "property_code",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Property Code",
+   "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "property_name",
    "fieldtype": "Data",
-   "label": "Property Name"
+   "in_list_view": 1,
+   "label": "Property Name",
+   "reqd": 1
   },
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "cost_center",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Cost Center",
-   "options": "Cost Center"
+   "options": "Cost Center",
+   "reqd": 1
   },
   {
    "fieldname": "image",
    "fieldtype": "Attach Image",
    "hidden": 1,
-   "label": "image"
+   "label": "Image"
   },
   {
    "fieldname": "status",
@@ -161,13 +175,58 @@
    "fieldname": "kitchen",
    "fieldtype": "Data",
    "label": "Kitchen"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "Property"
+  },
+  {
+   "fieldname": "parent_property",
+   "fieldtype": "Link",
+   "label": "Parent Property",
+   "options": "Property"
+  },
+  {
+   "fieldname": "projects",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Projects",
+   "options": "Project",
+   "reqd": 1
   }
  ],
  "image_field": "image",
- "modified": "2021-03-26 19:51:47.835601",
+ "is_tree": 1,
+ "modified": "2021-04-21 19:48:12.728459",
  "modified_by": "Administrator",
  "module": "PAV Property Management Solution",
  "name": "Property",
+ "nsm_parent_field": "parent_property",
  "owner": "Administrator",
  "permissions": [
   {
